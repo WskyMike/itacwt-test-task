@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# [React Admin Panel](https://wskymike.github.io/itacwt-test-task/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Пример современного приложение для управления данными, построенное на React, TypeScript и Tailwind CSS + DaisyUI.
+Проект демонстрирует подход к созданию масштабируемых React-приложений с акцентом на переиспользование компонентов и типобезопасность.
 
-Currently, two official plugins are available:
+## 🚀 Функционал
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Управление данными
 
-## Expanding the ESLint configuration
+- Просмотр списков в табличном формате.
+- Редактирование записей через модальные окна
+- Валидация форм и обработка пользовательского ввода
+- Поиск по текстовым полям
+- Фильтрация по статусу (активные/неактивные записи)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Интерфейс и навигация
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Табличное представление данных с адаптивным дизайном
+- Универсальная система колонок с настраиваемым рендерингом данных
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Масштабируемость
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Универсальная таблица с дженериками TypeScript - легко адаптируется под любые структуры данных
+- Переиспользуемые компоненты - поиск, фильтры и модальные окна работают с любыми типами данных
+- Модульная структура - легко добавлять новые разделы без дублирования кода
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠 Технологии
+
+- **React 19** с хуками и функциональными компонентами
+- **TypeScript** для типобезопасности
+- **React Router** для навигации
+- **Tailwind CSS** + **DaisyUI** для стилизации
+- **Vite** как сборщик проекта
